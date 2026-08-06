@@ -1,29 +1,44 @@
 const multer = require("multer");
-const path = require("path");
-const { nanoid } = require("nanoid");
+const { v2: cloudinary } = require("cloudinary");
+const { CloudinaryStorage } = require("multer-storage-cloudinary");
 
-const UPLOAD_DIR = path.join(__dirname, "..", "public", "uploads");
+cloudinary.config({
+  secure: true,
+});
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, UPLOAD_DIR),
-  filename: (req, file, cb) => {
-    const ext = path.extname(file.originalname) || ".jpg";
-    cb(null, `${nanoid(12)}${ext}`);
-  },
+const storage = new CloudinaryStorage({
+  cloudinary,
+  params: async (req, file) => ({
+    folder: "ilgeemj-flowers",
+    allowed_formats: ["jpg", "jpeg", "png", "webp", "gif"],
+    resource_type: "image",
+    public_id: `${Date.now()}-${Math.round(Math.random() * 1e9)}`,
+  }),
 });
 
 function fileFilter(req, file, cb) {
-  const allowed = ["image/jpeg", "image/png", "image/webp", "image/gif"];
+  const allowed = [
+    "image/jpeg",
+    "image/png",
+    "image/webp",
+    "image/gif",
+  ];
+
   if (!allowed.includes(file.mimetype)) {
-    return cb(new Error("Зөвхөн зургийн файл (jpg, png, webp, gif) хуулах боломжтой"));
+    return cb(
+      new Error("Зөвхөн jpg, jpeg, png, webp, gif зураг хуулах боломжтой")
+    );
   }
+
   cb(null, true);
 }
 
 const upload = multer({
   storage,
   fileFilter,
-  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB
+  limits: {
+    fileSize: 5 * 1024 * 1024,
+  },
 });
 
 module.exports = upload;
