@@ -1,0 +1,10 @@
+[
+  { "id": "all", "label": "Бүх цэцэг" },
+  { "id": "bayar-hurgeh", "label": "Баяр хүргэх" },
+  { "id": "hairaa-ilerhiileh", "label": "Хайраа илэрхийлэх" },
+  { "id": "hairt-eejdee", "label": "Хайрт ээждээ" },
+  { "id": "surprise-barih", "label": "Surprise барих" },
+  { "id": "torson-odriin", "label": "Төрсөн өдрийн" },
+  { "id": "hundetgel", "label": "Хүндэтгэл илэрхийлэх" },
+  { "id": "dagaldah", "label": "Дагалдах" }
+]

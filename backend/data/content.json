@@ -1,0 +1,96 @@
+{
+  "hero": {
+    "title": "Хэлж чадахгүй үгээ,\nцэцэг дуулгадаг",
+    "subtitle": "Багануур Сэтгэлийн Илгээмж бол цэцэг сонгож, өөрийн мэндчилгээгээ бичээд, ойрын хүндээ шууд хүргүүлдэг үйлчилгээ. Гараар бичсэн шиг карт, амьд цэцэг — нэг захиалгад.",
+    "primaryButtonLabel": "Захиалах",
+    "secondaryButtonLabel": "Мэндчилгээгээ эхлүүл",
+    "image": "/uploads/LqinEgJGn2xD.png",
+    "phoneImage": "/uploads/A12hpfgSY5t4.png"
+  },
+  "nav": [
+    {
+      "label": "Нүүр",
+      "path": "/"
+    },
+    {
+      "label": "Мэндчилгээ бичих",
+      "path": "/#composer"
+    },
+    {
+      "label": "Хүргэлт",
+      "path": "/#steps"
+    }
+  ],
+  "services": [
+    {
+      "title": "Цэцгийн хүргэлт",
+      "desc": "Багануур дүүргийн хэмжээнд өдрийн дотор хүргэнэ",
+      "icon": "delivery",
+      "link": "/#steps"
+    },
+    {
+      "title": "Захиалгаар боох",
+      "desc": "Өнгө, төсөв, зориулалтын дагуу баглаа бэлдэнэ",
+      "icon": "custom",
+      "link": "/shop"
+    },
+    {
+      "title": "Мэндчилгээний карт",
+      "desc": "Гараар бичсэн шиг үгээ цэцэгтэйгээ хамт хүргэнэ",
+      "icon": "card",
+      "link": "/#composer"
+    },
+    {
+      "title": "Түргэн захиалга",
+      "desc": "Яаралтай тохиолдолд хурдан хугацаанд бэлдэнэ",
+      "icon": "urgent",
+      "link": "/shop"
+    }
+  ],
+  "footer": {
+    "tagline": "Багануур дүүрэгт шинэхэн цэцэг, бэлгийг өдрийн турш хүргэнэ.",
+    "phone": "+976 8800 0000",
+    "email": "hello@sentgeliin-ilgeemj.mn",
+    "address": "Багануур дүүрэг, Улаанбаатар",
+    "columns": [
+      {
+        "title": "Дэлгүүр",
+        "items": [
+          {
+            "label": "Бүх цэцэг",
+            "url": "/shop"
+          },
+          {
+            "label": "Баяр хүргэх",
+            "url": "/shop?category=bayar-hurgeh"
+          },
+          {
+            "label": "Хайраа илэрхийлэх",
+            "url": "/shop?category=hairaa-ilerhiileh"
+          },
+          {
+            "label": "Дагалдах",
+            "url": "/shop?category=dagaldah"
+          }
+        ]
+      },
+      {
+        "title": "Тусламж",
+        "items": [
+          {
+            "label": "Хүргэлтийн нөхцөл",
+            "url": "/#steps"
+          },
+          {
+            "label": "Захиалга хянах",
+            "url": "/cart"
+          },
+          {
+            "label": "Буцаалт",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  }
+}
