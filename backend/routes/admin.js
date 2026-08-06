@@ -408,7 +408,7 @@ router.post("/content/hero-phone-image", (req, res) => {
     if (!req.file) {
       return res.status(400).json({ error: "Зураг олдсонгүй" });
     }
-    const imageUrl = `/uploads/${req.file.filename}`;
+    const imageUrl = req.file.path;
     const content = store.getContent();
     content.hero = { ...content.hero, phoneImage: imageUrl };
     store.saveContent(content);
