@@ -7,11 +7,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "baganuursetgeliinilgeemj-production.up.railway.app",
+        target: "http://localhost:5000",
         changeOrigin: true,
       },
       "/uploads": {
-        target: "baganuursetgeliinilgeemj-production.up.railway.app",
+        target: "http://localhost:5000",
         changeOrigin: true,
       },
     },
@@ -20,11 +20,11 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        target: "baganuursetgeliinilgeemj-production.up.railway.app",
+        target: "http://localhost:5000",
         changeOrigin: true,
       },
       "/uploads": {
-        target: "baganuursetgeliinilgeemj-production.up.railway.app",
+        target: "http://localhost:5000",
         changeOrigin: true,
       },
     },
